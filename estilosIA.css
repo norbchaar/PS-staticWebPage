@@ -1,0 +1,96 @@
+/* General settings for dark theme and sans-serif fonts */
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar styling */
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Page layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  width: 40%;
+  padding: 2em;
+}
+
+.right-section {
+  width: 60%;
+  padding: 2em;
+}
+
+#options {
+  margin-top: 1em;
+}
+
+/* Drawing styling */
+.drawing {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.drawing img {
+  max-width: 45%;
+  height: auto;
+  margin: 20px;
+  border: 5px solid #555;
+  padding: 20px;
+}
+
+/* Show drawings based on radio button selection */
+#cartoonsRadio:checked ~ .drawing {
+  display: none;
+}
+#cartoonsRadio:checked ~ #cartoons {
+  display: flex;
+}
+#landscapesRadio:checked ~ .drawing {
+  display: none;
+}
+#landscapesRadio:checked ~ #landscapes {
+  display: flex;
+}
+#animeRadio:checked ~ .drawing {
+  display: none;
+}
+#animeRadio:checked ~ #anime {
+  display: flex;
+}
+
+/* Responsiveness for tablet screens */
+@media (max-width: 1024px) {
+  .drawing img {
+    max-width: 80%;
+  }
+}
+
+/* Responsiveness for phone screens */
+@media (max-width: 600px) {
+  .drawing img {
+    max-width: 100%;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Static Drawing Website</title>
+    <link rel="stylesheet" type="text/css" href="estilosIA.css" />
+    <meta />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#contact">Contact Information</a></li>
+        <li><a href="#about">About the Maintainer</a></li>
+        <li><a href="#catalog">Catalog</a></li>
+        <li>
+          <a
+            href="https://catedras.linti.unlp.edu.ar/pluginfile.php/131102/question/questiontext/114271/1/191028/image%20%281%29.png"
+            >ACTIVIDAD 1 - PROYECTO DE SOFTWARE</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="left-section">
+        <section id="contact">
+          <h1>Contact Information</h1>
+          <form>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value="Norb Chaar"
+            /><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br /><br />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </section>
+
+        <section id="about">
+          <h1>About the Maintainer</h1>
+          <p>This site is maintained by Norb Chaar.</p>
+        </section>
+      </div>
+
+      <div class="right-section">
+        <section id="catalog">
+          <h1>Catalog</h1>
+
+          <input type="radio" name="category" id="cartoonsRadio" />
+          <label for="cartoonsRadio">Cartoons</label>
+
+          <input type="radio" name="category" id="landscapesRadio" />
+          <label for="landscapesRadio">Landscapes</label>
+
+          <input type="radio" name="category" id="animeRadio" />
+          <label for="animeRadio">Anime</label>
+
+          <!-- Drawing display sections -->
+          <div class="drawing" id="cartoons">
+            <img src="images/cartoon1.png" alt="Cartoon 1" />
+            <img src="images/cartoon2.png" alt="Cartoon 2" />
+          </div>
+          <div class="drawing" id="landscapes">
+            <img src="images/landscape1.png" alt="Landscape 1" />
+            <img src="images/landscape2.png" alt="Landscape 2" />
+          </div>
+          <div class="drawing" id="anime">
+            <img src="images/anime1.png" alt="Anime 1" />
+            <img src="images/anime2.png" alt="Anime 2" />
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
